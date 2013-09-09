@@ -1,0 +1,253 @@
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.clearfix:after {
+  clear: both;
+}
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1;
+}
+.pure-button-success,
+.pure-button-error,
+.pure-button-warning,
+.pure-button-secondary {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.pure-button-success {
+  background: #1cb841;
+  /* this is a green */
+
+}
+.pure-button-error {
+  background: #ca3c3c;
+  /* this is a maroon */
+
+}
+.pure-button-warning {
+  background: #df7514;
+  /* this is an orange */
+
+}
+.pure-button-secondary {
+  background: #42b8dd;
+  /* this is a light blue */
+
+}
+.pure-button-xsmall {
+  font-size: 70%;
+}
+.pure-button-small {
+  font-size: 85%;
+}
+.pure-button-large {
+  font-size: 110%;
+}
+.pure-button-xlarge {
+  font-size: 125%;
+}
+body {
+  margin: 0 auto;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  font-size: 100%;
+  color: #444444;
+  background: #ffffff;
+}
+.header {
+  background: #2d2d2d;
+}
+.header .header__content {
+  height: 2.5em;
+  max-width: 70em;
+  padding: 2em 0;
+  margin: 0 auto;
+}
+.header .header__content .header__logo {
+  float: left;
+  width: 10em;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5em;
+}
+.header .header__content .header__logo a {
+  color: #fff;
+}
+.header .header__content .header__menu {
+  float: right;
+  width: 50em;
+  text-align: right;
+  background: #2d2d2d;
+}
+.header .header__content .header__menu a {
+  color: #fff;
+}
+.site-block {
+  background-color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+.site-block .site-block__content {
+  margin: 0 auto;
+  max-width: 70em;
+}
+.site-block .site-block__content h2 {
+  font-size: 2.5em;
+  color: #00acac;
+  font-weight: 300;
+  margin: 0.5em 0 0.7em 0;
+}
+.site-block .site-block__content .site-block__title-join {
+  font-size: 3.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  font-weight: 300;
+  color: #fff;
+}
+.site-block .site-block__content .site--block__login {
+  border-bottom: 1px solid #b1eef1;
+  height: 2.6em;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
+.site-block .site-block__content .site--block__login .site--block__login--info {
+  margin: 1em 0 0 0;
+  display: inline-block;
+  padding: 0.2em 1.2em;
+  font-weight: 300;
+  background-color: #b1eef1;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  color: #246162;
+  font-size: 1.4em;
+}
+.site-block .site-block__content .site--block__content {
+  font-size: 1.7em;
+  font-weight: 100;
+  margin: 0;
+}
+.site-block .site-block__content .site--block__content strong {
+  font-weight: 400;
+  color: #a8fcfe;
+}
+.site-block .site-block__content .site-block__link {
+  padding: 0;
+  margin: 3.5em 0 2em 0;
+}
+.site-block .site-block__content .site-block__link li {
+  list-style: none;
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  margin-right: 20px;
+}
+.site-block .site-block__content .site-block__link li:last-child {
+  margin-right: 0;
+}
+.site-block .site-block__content .site-block__content-how {
+  padding: 0;
+  margin: 0 0 1em 0;
+}
+.site-block .site-block__content .site-block__content-how li {
+  list-style: none;
+}
+.site-block .site-block__content .site-block__content-how li .site-block__content-how-box {
+  padding: 0 1em 1em 1em;
+}
+.site-block .site-block__content .site-block__content-how li .site-block__content-how__title {
+  margin: 1em 0 0 0;
+}
+.site-block .site-block__content .site-block__content-how li .site-block__content-how__detail {
+  margin: 0.5em 0 0 0;
+}
+.site-block .site-block__content .site-block__content-with-media {
+  text-align: left;
+  margin: 0 0 3em 0;
+}
+.site-block .site-block__content .site-block__content-with-media .site-block__content-with-media__left {
+  text-align: center;
+}
+.site-block .site-block__content .site-block__content-with-media .site-block__content-with-media__right .site-block__content-with-media__right-info {
+  padding: 0 0 0 1em;
+  margin: 0;
+}
+.site-block .site-block__content .site-block__follow {
+  margin: -1.5em 0 4em 0;
+  border-bottom-color: #0cb0b0;
+}
+.site-block .site-block__content .site-block__follow .site-block__follow--info {
+  background-color: #0cb0b0;
+  color: #fff;
+}
+.site-block .site-block__content .site-block__friend ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-block .site-block__content .site-block__friend .site-block__friend-list {
+  list-style: none;
+}
+.site-block .site-block__content .site-block__friend .site-block__friend-list .site-block__friend-list-item {
+  display: block;
+  margin: 0em 1em 1em 0;
+  width: 70px;
+  height: 70px;
+  float: left;
+}
+.site-block .site-block__content .site-block__friend .site-block__why-friend {
+  text-align: left;
+}
+.site-block .site-block__content .site-block__friend .site-block__why-friend ul {
+  padding: 0 0 0 2em;
+}
+.site-block .site-block__content .site-block__friend .site-block__why-friend ul li {
+  padding-bottom: 1em;
+  list-style: square inside;
+}
+.site-block .site-block__content .site-block__join-us {
+  margin: 1em 0 2em 0;
+}
+.join-us {
+  background-color: #42a8ac;
+  color: #fff;
+}
+.use-easy {
+  background-color: #f1f1f1;
+  color: #444;
+}
+.have-fun {
+  background-color: #f1f1f1;
+  color: #444;
+}
+.footer {
+  background-color: #2D2D2D;
+}
+.footer .footer__content {
+  height: 2.5em;
+  max-width: 70em;
+  padding: 2em 0;
+  margin: 0 auto;
+}

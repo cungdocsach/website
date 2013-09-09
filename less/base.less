@@ -1,0 +1,294 @@
+//
+// Base CSS
+// --------------------------------------------------
+
+// Body 
+
+body {
+	margin: 0 auto;
+	font-family: @font-family-sans-serif;
+	line-height: @line-height-normal;
+	font-size: @font-size-normal;
+	color: @text-color;
+	background: @body-background;
+}
+
+
+// Header
+
+.header {
+	background: @header-background;
+	
+	.header__content {
+		height: 2.5em;
+		max-width: @max-width-size;
+		padding: 2em 0;
+		margin: 0 auto;
+
+		.header__logo {
+			float: left;
+			width: 10em;
+			padding: 0;
+			margin: 0;
+			font-size: 1.5em;
+
+			a {
+				color: #fff;
+			}
+		}
+
+		.header__menu {
+			float: right;
+			width: 50em;
+			text-align: right;
+			background: @header-background;
+
+			a {
+				color: #fff;
+			}
+		}
+
+	}
+
+
+}
+
+
+// Home Site Block
+
+.site-block {
+	background-color: #fff;
+	padding: 1em 0;
+	text-align: center;
+
+	.site-block__content {
+		margin: 0 auto;
+		max-width: @max-width-size;
+
+		h2 {
+			font-size: 2.5em;
+			color: #00acac;
+			font-weight: 300;
+			margin: 0.5em 0 0.7em 0;
+		}
+
+		// Join Us
+
+		.site-block__title-join {
+			font-size: 3.5em;
+			margin-top: 0.5em;
+			margin-bottom: 0.2em;
+			font-weight: 300;
+			color: #fff;
+		}
+
+		.site--block__login {
+			border-bottom: 1px solid #b1eef1;
+			height: 2.6em;
+			margin-top: 0.5em;
+			margin-bottom: 2em;
+
+			.site--block__login--info {
+				margin: 1em 0 0 0;
+				display: inline-block;
+				padding: 0.2em 1.2em;
+				font-weight: 300;
+				background-color: #b1eef1;
+				-webkit-border-radius: 25px;
+				-moz-border-radius: 25px;
+				border-radius: 25px;
+				color: #246162;
+				font-size: 1.4em;
+			} 
+		}
+
+		.site--block__content {
+			font-size: 1.7em;
+			font-weight: 100;
+			margin: 0;
+
+			strong {
+				font-weight: 400;
+				color: #a8fcfe;
+			}
+		}
+
+		.site-block__link {
+			padding: 0;
+			margin: 3.5em 0 2em 0;
+
+			li {
+				list-style: none;
+				display: inline-block;
+				width: 58px;
+				height: 58px;
+				margin-right: 20px;
+			}
+
+			li:last-child {
+				margin-right: 0;
+			}
+
+		}
+
+		
+
+		// Use Easy
+
+		.site-block__title-use {
+
+		}
+
+		.site-block__content-how {
+			padding: 0;
+			margin: 0 0 1em 0;
+
+			li {
+				list-style: none;
+
+				.site-block__content-how-box {
+					padding: 0 1em 1em 1em;
+				}
+
+				.site-block__content-how__title {
+					margin: 1em 0 0 0;
+				}
+
+				.site-block__content-how__detail {
+					margin: 0.5em 0 0 0;
+				}
+			}
+
+		}
+
+
+
+		// More Benefit
+
+		.site-block__title-more {
+
+		}
+
+		.site-block__content-with-media {
+			text-align: left;
+			margin: 0 0 3em 0;
+
+			.site-block__content-with-media__left {
+				text-align: center;
+			}
+
+			.site-block__content-with-media__right {
+
+				.site-block__content-with-media__right-info {
+					padding: 0 0 0 1em;
+					margin: 0;					
+				}
+
+			}
+
+
+		}
+
+
+
+		// Have Fun
+
+		.site-block__title-connect {
+
+		}
+
+		.site-block__follow {
+			margin: -1.5em 0 4em 0;
+			border-bottom-color: #0cb0b0;
+
+			.site-block__follow--info {
+				background-color: #0cb0b0;
+				color: #fff;
+			}
+
+		}
+
+		.site-block__friend {
+
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+
+			.site-block__friend-list {
+				list-style: none;
+
+				.site-block__friend-list-item {
+					display: block;
+					margin: 0em 1em 1em 0;
+					width: 70px;
+					height: 70px;
+					float: left;
+				}
+			}
+
+			.site-block__why-friend {
+				text-align: left;
+
+				ul {
+					padding: 0 0 0 2em;
+
+					li {
+						padding-bottom: 1em;
+						list-style: square inside;
+					}
+				}
+			}
+
+		}
+
+		.site-block__join-us {
+			margin: 1em 0 2em 0;
+		}
+
+	}
+
+}
+
+.join-us {
+	background-color: #42a8ac;
+	color: #fff;
+}
+
+.use-easy {
+	background-color: #f1f1f1;
+	color: #444;
+}
+
+.have-fun {
+	background-color: #f1f1f1;
+	color: #444;
+}
+
+
+// Footer
+
+.footer {
+	background-color: #2D2D2D;
+
+	.footer__content {
+		height: 2.5em;
+		max-width: @max-width-size;
+		padding: 2em 0;
+		margin: 0 auto;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
