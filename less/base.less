@@ -27,9 +27,9 @@ body {
 
 		.header__logo {
 			float: left;
-			width: 10em;
 			padding: 0;
 			margin: 0;
+			width: 10em;
 			font-size: 1.5em;
 
 			a {
@@ -37,15 +37,68 @@ body {
 			}
 		}
 
+		.header__menu-touch {
+			color: #fff;
+			font-size: 1.8em;
+			float: right;
+			border: none;
+			background: transparent;
+			padding: 3px 20px;
+			line-height: 1.2em;
+		}
+
 		.header__menu {
 			float: right;
-			width: 50em;
 			text-align: right;
 			background: @header-background;
+			width: 40em !important;
 
 			a {
 				color: #fff;
 			}
+
+			.header__menu-item  {
+				a {
+					background: none;
+					padding: 5px 0px 5px 40px;
+				&:hover {
+					background: none;
+					color: #ffc44f;
+					};
+				}
+			}
+
+			.header__menu--active {
+				a {
+					color: #ffc44f !important;	
+				}
+
+			}
+
+		}
+
+		.header__menu-touch--active {
+			display: block !important;
+			width: 100% !important;
+
+			.header__menu-list {
+				height: auto;
+				background-color: #2D2D2D;
+				width: 100%;
+				position: absolute;
+				top: 5em;
+				padding-bottom: 1em;
+				.header__menu-item {
+					display: block;
+					width: 100%;
+					float: none;
+
+					a {
+						padding: 5px 20px;
+					}
+				}
+			}
+
 		}
 
 	}
@@ -77,7 +130,7 @@ body {
 		.site-block__title-join {
 			font-size: 3.5em;
 			margin-top: 0.5em;
-			margin-bottom: 0.2em;
+			margin-bottom: 0.3em;
 			font-weight: 300;
 			color: #fff;
 		}
@@ -85,7 +138,7 @@ body {
 		.site--block__login {
 			border-bottom: 1px solid #b1eef1;
 			height: 2.6em;
-			margin-top: 0.5em;
+			margin-top: 0.8em;
 			margin-bottom: 2em;
 
 			.site--block__login--info {
@@ -181,7 +234,8 @@ body {
 
 				.site-block__content-with-media__right-info {
 					padding: 0 0 0 1em;
-					margin: 0;					
+					margin: 0;
+					line-height: 1.8em;					
 				}
 
 			}
@@ -278,6 +332,14 @@ body {
 		padding: 2em 0;
 		margin: 0 auto;
 	}
+
+}
+
+
+// Responsive Menu
+
+@media (max-width: 767px) {
+
 
 }
 
