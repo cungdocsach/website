@@ -22,14 +22,14 @@ body {
 	.header__content {
 		height: 2.5em;
 		max-width: @max-width-size;
-		padding: 2em 0;
+		padding: 2em;
 		margin: 0 auto;
 
 		.header__logo {
 			float: left;
 			padding: 0;
 			margin: 0;
-			width: 10em;
+			width: 9em;
 			font-size: 1.5em;
 
 			a {
@@ -39,34 +39,46 @@ body {
 
 		.header__menu-touch {
 			color: #fff;
-			font-size: 1.8em;
+			font-size: 1.5em;
 			float: right;
 			border: none;
 			background: transparent;
-			padding: 3px 20px;
-			line-height: 1.2em;
+			padding: 0;
+			line-height: 1em;
+			width: 1.5em;
+			height: 1.5em;
+			border-radius: @border-radius;
+			background-color: #000;
 		}
 
 		.header__menu {
 			float: right;
 			text-align: right;
 			background: @header-background;
-			width: 40em !important;
+			width: 29em !important;
 
 			a {
 				color: #fff;
 			}
 
+			li:first-child  a {
+				padding-left: 0;
+			}
+
 			.header__menu-item  {
 				a {
 					background: none;
-					padding: 5px 0px 5px 40px;
+					padding: 5px 0px 5px 25px;
+
 				&:hover {
 					background: none;
 					color: #ffc44f;
-					};
+					}
 				}
+
 			}
+
+
 
 			.header__menu--active {
 				a {
@@ -86,15 +98,18 @@ body {
 				background-color: #2D2D2D;
 				width: 100%;
 				position: absolute;
-				top: 5em;
-				padding-bottom: 1em;
+				top: 6em;
+				box-sizing: border-box;
+				padding: 0.2em 2em 1em 2em;
+
 				.header__menu-item {
 					display: block;
 					width: 100%;
 					float: none;
+					text-align: left;
 
 					a {
-						padding: 5px 20px;
+						padding: 5px 0;
 					}
 				}
 			}
@@ -111,7 +126,7 @@ body {
 
 .site-block {
 	background-color: #fff;
-	padding: 1em 0;
+	padding: 1em 2em 1em 2em;
 	text-align: center;
 
 	.site-block__content {
@@ -240,6 +255,18 @@ body {
 
 			}
 
+			@media (max-width: 767px) {
+
+				.site-block__content-with-media__right {
+					.site-block__content-with-media__right-info {
+						padding: 1em 0 0 0;
+						margin: 0;
+						line-height: 1.8em;					
+					}
+				}
+
+			}
+
 
 		}
 
@@ -280,6 +307,18 @@ body {
 					height: 70px;
 					float: left;
 				}
+
+
+				@media (max-width: 767px) {
+					.site-block__friend-list-item {
+						display: inline-block;
+						margin: 0 0.5em 0.5em 0;
+						width: 70px;
+						height: 70px;
+						text-align: center;
+						float: none;
+					}
+				}
 			}
 
 			.site-block__why-friend {
@@ -291,6 +330,20 @@ body {
 					li {
 						padding-bottom: 1em;
 						list-style: square inside;
+					}
+				}
+
+				@media (max-width: 767px) {
+					
+					ul {
+						padding: 0;
+						margin-top: 2em;
+
+						li {
+							padding: 0.5em 0;
+							text-align: center;
+							border-top: 1px solid #eee;
+						}
 					}
 				}
 			}
@@ -329,7 +382,7 @@ body {
 	.footer__content {
 		height: 2.5em;
 		max-width: @max-width-size;
-		padding: 2em 0;
+		padding: 2em;
 		margin: 0 auto;
 	}
 
